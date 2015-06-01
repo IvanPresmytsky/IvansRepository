@@ -1,4 +1,7 @@
+<!-- Я буду писать ошибки в одном месте, если они дублируются в другом - сам находишь и правишь -->
 <!-- Главная страница должна называться index.html. Так принято, другие же страницы ты можешь называть как хочешь -->
+<!-- Всегда проверяй свои документы на валидность перед отправкой, вот html валидатор http://validator.w3.org/    Этот документ не валидный. Ворнинги могут быть, а ошибок не должно быть вообще -->
+<!-- -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +9,7 @@
 	<title>Барбершоп "Бородинский"</title>
 </head>
 <body>
+	<!-- Тут не нужен clearfix. Тема clerfix будет подниматься дальше в вебинарах -->
 	<header class="main-header clearfix">
 		<div class="container clearfix">
 			<nav class="main-navigation">
@@ -35,7 +39,8 @@
 			</div>
 		</div>
 	</header>	
-
+	
+	<!-- Шапку обернул в блок, а тут почему нет? -->
 	<div class="container">
 		<div class="logo">
 			<img src="img/logo.png" width="368" height="204" alt="Барбершоп "Бородинский"">
@@ -71,6 +76,7 @@
 				<h2 class="content-column-title">Фотогаллерея</h2>
 				<div class="gallery">
 					<figure class="gallery-content">
+						<!-- У всех img параметр alt должен быть заполнен -->
 						<img src="img/photo-1.img" width="286" height="164" alt="">
 						<img src="" alt="">
 						<img src="" alt="">
@@ -107,6 +113,7 @@
 						<input type="time" name="time" value="" placeholder="Время">
 						<input type="text" name="name" value="" placeholder="Ваше имя">
 						<input type="tel" name="phone" value="" placeholder="Телефон">
+						<!-- Размер кнопки не стандартный, надо добавить ещё один класс, чтобы застилизовать -->
 						<button class="btn" type="submit">Отправить</button>
 
 					</form>

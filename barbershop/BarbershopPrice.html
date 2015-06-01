@@ -36,8 +36,10 @@
 	</header>
 
 	<div class="container">
+		<!-- header семантически используется только для шапки страницы, тут нужен просто div -->
 		<header class="price-header">
 			<h1 class="main-title">Прайс-лист</h1>
+			<!-- Уже писал -->
 			<ul>
 				<li>
 				<a href="">Главная</a> 
@@ -49,6 +51,7 @@
 		</header>
 		<h2>истинно мужская классика</h2>
 		<div class="index-content clearfix">
+			<!-- instrumentation и pricelist оберни в один блок, они находятся на одном уровне, так будет проще ими управлять -->
 			<div class="instrumentation">
 				<h3>мы используем только лучшие средства:</h3>
 				<ul>
@@ -60,6 +63,7 @@
 			</div>
 			<div class="pricelist">
 				<h3>Цены на услуги наших мастеров:</h3>
+				<!-- А вот тут table в самый раз, table только для таблиц -->
 				<table>
 					<tr>
 						<td>стрижка</td>

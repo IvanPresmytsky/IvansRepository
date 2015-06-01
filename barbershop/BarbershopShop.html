@@ -34,8 +34,10 @@
 			</div>
 		</div>
 	</header>
-
+	
+	<!-- Уже писал, оборачиваем всю основную часть в блок main-content или main-part -->
 	<div class="container">
+		<!-- уже писал, header только для шапки-->
 		<header class="shop-header">
 			<h1>Средства для ухода</h1>
 			<ul>
@@ -45,6 +47,7 @@
 				<li>
 					<a href="#">Магазин</a>	
 				</li>
+				<!-- нужно как-то выделить не активную ссылку в хлебных крошках, через класс current или not-active например -->
 				<li>
 					<a href="#">Средства для ухода</a>
 				</li>
@@ -52,6 +55,7 @@
 		</header>
 		<div class="index-content clearfix">
 			<div class="producer-filter">
+				<!-- Весь фильтр будет в форме, нам надо будет типо данные отправлять. все чекбоксы, радио кнопи и кнопка. Все эти элементы работают только в форме. Список выкидывай, и используй label + input какой тебе нужен -->
 				<h3>производители:</h3>	
 				<ul>
 					<li>
@@ -77,6 +81,7 @@
 					</li>
 				</ul>
 			</div>
+			<!-- Это всё одна большая форма, никакого списка. Просто label + input -->
 			<div class="goods-group">
 				<h3>группы товаров</h3>
 				<ul>
@@ -100,11 +105,14 @@
 					показать
 				</button>
 			</div>
+			<!-- т.к. товаров много, то goods-items -->
 			<div class="goods-item">
 				<article class="product" name="Набор для путешествий">
+					<!-- размер -->
 					<img src="#" alt="Набор для путешествий">
 					<p class="description">Набор для путешествий</p>
 					<p class="producer">"baxter of california"</p>
+					<!-- span + ссылка -->
 					<table>
 						<tr>
 							<td class="product-price">2900 руб.</td>
@@ -179,7 +187,9 @@
 						</tr>
 					</table>
 				</article>
+				<!-- у этого блока есть термин: пагинация. class="pagination" -->
 				<div class="buttons-bar">
+					<!-- выделить текузую страницу. И зачем тут id? id используем только для связи label с input или для якоря на страницу. -->
 					<a href="#" class="btn" id="btn1">1</a>
 					<a href="#" class="btn" id="btn2">2</a>
 					<a href="#" class="btn" id="btn3">3</a>
