@@ -1,4 +1,3 @@
-<!-- Шапку и подвал не смотрю, я их проверил на главной -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,75 +34,66 @@
 			</div>
 		</div>
 	</header>
-	
-	<!-- Шапку обернул в блок, а тут почему нет? -->
-	<div class="container">
-		<header class="shop-header">
-			<h1>набор для путешествий "baxter of california"</h1>
-			<!-- для списка нужен класс, чтобы потом можно было застилизовать-->
-			<ul>
-				<li>
-					<a href="#">Главная</a>
-				</li>
-				<li>
-					<a href="#">Магазин</a>	
-				</li>
-				<li>
-					<a href="#">Средства для ухода</a>
-				</li>
-				<li>
-					<a href="#">набор для путешествий "baxter of california"</a>
-				</li>
-			</ul>
-		</header>
-		<div class="index-content">
-			<!-- Я бы кдасс назвал product-gallery -->
-			<div class="product-imgs">
-				<div class="main-img">
-					<!-- Для всех img надо обязательно проставлять размер -->
-					<img src="#" alt="">
-				</div>
-				<div class="demo-imgs">
-					<img src="#" alt="">
-					<img src="#" alt="">
-					<img src="#" alt="">
-				</div>
+
+	<div class="main-content">
+		<div class="container clearfix">
+			<div class="shop-header">
+				<h1>набор для путешествий "baxter of california"</h1>
+				<nav class="item-navigation">
+					<ul>
+						<li>
+							<a href="#">Главная</a>
+						</li>
+						<li>
+							<a href="#">Магазин</a>	
+						</li>
+						<li>
+							<a href="#">Средства для ухода</a>
+						</li>
+						<li>
+							<a class="active" href="#">набор для путешествий "baxter of california"</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
-			<div class="main-product-description">
-				<div class="product-description">
-					<p class="avalibility">есть в наличии</p>
-					<!-- Артикул находится на одной строке, а параграф является блочным элементом и переносится на новую строку. Лучше в такой ситуации использовать span -->
-					<p class="articul">артикул: Dexter-ae</p>
-					<p class="description-text">
-					travel kit - необходимый аксессуар во время любого <br>
-					путешествия. В аккуратной кожаной сумке находится все, что <br> нужно для бритья и ухода за кожей во время рабочей поездки <br> или отдыха: средство для умывания, увлажняющий крем, крем <br> для бритья, крем после бритья, шампунь. Набор так же может <br> стать отличным подарком.
-					</p>
-					<!-- Никакого table, table нужен только для таблиц, ничего остального им не надо делать -->
-					<!-- Тут должен быть span и просто ссылка с классом -->
-					<table>
-						<tr>
-							<td class="product-price">2900 руб.</td>
-							<td>
-								<!-- button может быть только в форме (from). Тут просто ссылка-->
-								<button class="btn">купить</button>
-							</td>
-						</tr>
-					</table>
-					<div class="complectation">
-						<h3>в набор входят:</h3>
-						<!-- Списку нужен класс, чтобы застилизовать, он ведь не стандартный -->
-						<ul>
-							<li>средство для умывания(50мл)</li>
-							<li>увлажняющий крем(50мл)</li>
-							<li>крем для бритья(50мл)</li>
-							<li>крем после бритья, шампунь(50мл)</li>
-							<li>удобная кожаная косметичка</li>
-						</ul>
+			<div class="index-content">
+				<div class="product-gallery">
+					<div class="main-img">
+						<img src="#" alt="">
+					</div>
+					<div class="demo-imgs">
+						<img src="#" alt="">
+						<img src="#" alt="">
+						<img src="#" alt="">
+					</div>
+				</div>
+				<div class="main-product-description">
+					<div class="product-description">
+						<p class="avalibility">
+						есть в наличии
+						<span class="articul">артикул: Dexter-ae</span>
+						</p>
+						<p class="description-text">
+						travel kit - необходимый аксессуар во время любого <br>
+						путешествия. В аккуратной кожаной сумке находится все, что <br> нужно для бритья и ухода за кожей во время рабочей поездки <br> или отдыха: средство для умывания, увлажняющий крем, крем <br> для бритья, крем после бритья, шампунь. Набор так же может <br> стать отличным подарком.
+						</p>
+						<span class="product-price">2900 руб.</span>
+						<a href="#" class="btn">купить</a>
+						<div class="complectation">
+							<h3>в набор входят:</h3>
+							<ul class="complectation-items">
+								<li>средство для умывания(50мл)</li>
+								<li>увлажняющий крем(50мл)</li>
+								<li>крем для бритья(50мл)</li>
+								<li>крем после бритья, шампунь(50мл)</li>
+								<li>удобная кожаная косметичка</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
+		
 		</div>
-
 	</div>
 
 	<footer class="main-footer">
