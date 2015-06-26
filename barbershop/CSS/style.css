@@ -1,0 +1,121 @@
+.clearfix:after{
+	content:'';
+	display: table;
+	clear: both;
+}
+.main-header{
+	background: green;
+	min-height:72px;
+	margin-bottom:20px;
+}
+.container{
+	background: yellow;
+	width: 940px;
+	margin: 0px auto;
+	padding: 20px;
+}
+.main-navigation{
+	float: left;
+	width: 800px;
+	min-height: 50px;
+	background: red;
+}
+.user-block{
+	float: right;
+	width: 140px;
+	min-height: 50px;
+	background: red;
+	text-align:right;
+}
+.main-content{
+	margin-bottom: 20px;
+}
+.logo{
+	width: 368px;
+	min-height:204px;
+	margin: 20px auto;
+	background: red;
+}
+.features-row{
+	background: orange;
+	margin-bottom: 20px;
+}
+.features-item{
+	float:left;
+	width: 300px;
+	min-height: 165px;
+	margin-right: 20px;
+	background: red;
+}
+.features-item:last-child{
+	margin-right: 0px;
+}
+.index-content{
+	width: 940px;
+	background: orange;
+}
+.content-column-left{
+	float:left;
+	width: 460px;
+	min-height: 430px;
+	margin-right: 20px;
+	margin-bottom: 34px; 
+	background: red;
+}
+.content-column-right{
+	float:left;
+	width: 460px;
+	min-height: 430px;
+	margin-bottom: 34px; 
+	background: red;
+}
+.main-footer{
+	background: green;
+	min-height: 254px;
+	margin-bottom: 20px;
+}
+.footer-contacts{
+	background: red;
+	float:left;
+	margin-right: 20px;
+	width: 350px;
+	min-height: 88px;
+	text-align:left;
+	vertical-align: top;
+}
+.footer-social{
+	background: red;
+	float:left;
+	margin-right: 20px;
+	width: 200px;
+	min-height: 88px;
+	text-align:center;
+	vertical-align: top;
+}
+.footer-copyright{
+	background: red;
+	float:right;
+	width: 350px;
+	min-height: 88px;
+	text-align:right;
+	vertical-align: top;
+}
+
+.shop-header{
+	width: 660px;
+	min-height: 80px;
+	margin-bottom: 55px;
+	background: red;
+}
+.product-gallery{
+	float:left;
+	width: 510px;
+	min-height: 710px;
+	background: red;
+}
+.main-product-description{
+	float:right;
+	width: 400px;
+	min-height: 710px;
+	background: red;
+}

@@ -1,0 +1,79 @@
+.clearfix:after{
+	content:'';
+	display: table;
+	clear: both;
+}
+.main-header{
+	background: green;
+	min-height:72px;
+	margin-bottom:20px;
+}
+.container{
+	ackground: yellow;
+	width: 940px;
+	margin: 0px auto;
+	padding: 20px;
+}
+.main-navigation{
+	float: left;
+	width: 800px;
+	min-height: 50px;
+	background: red;
+}
+.user-block{
+	float: right;
+	width: 140px;
+	min-height: 50px;
+	background: red;
+	text-align:right;
+}
+.main-content{
+	background: orange;
+}
+.shop-header{
+	background: red;
+	width: 300px;
+	margin: 20px;
+}
+.left-filter{
+	float: left;
+	width:300px;
+	background: red;
+}
+.goods-items{
+	background: red;
+}
+
+
+.main-footer{
+	background: green;
+	min-height: 254px;
+	margin-bottom: 20px;
+}
+.footer-contacts{
+	background: red;
+	float:left;
+	margin-right: 20px;
+	width: 350px;
+	min-height: 88px;
+	text-align:left;
+	vertical-align: top;
+}
+.footer-social{
+	background: red;
+	float:left;
+	margin-right: 20px;
+	width: 200px;
+	min-height: 88px;
+	text-align:center;
+	vertical-align: top;
+}
+.footer-copyright{
+	background: red;
+	float:right;
+	width: 350px;
+	min-height: 88px;
+	text-align:right;
+	vertical-align: top;
+}
+

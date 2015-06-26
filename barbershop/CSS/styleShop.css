@@ -1,0 +1,149 @@
+.clearfix:after{
+	content:'';
+	display: table;
+	clear: both;
+}
+.main-header{
+	background: green;
+	min-height:72px;
+	margin-bottom:20px;
+}
+.container{
+	background: yellow;
+	width: 940px;
+	margin: 0px auto;
+	padding: 20px;
+}
+.main-navigation{
+	float: left;
+	width: 800px;
+	min-height: 50px;
+	background: red;
+}
+.user-block{
+	float: right;
+	width: 140px;
+	min-height: 50px;
+	background: red;
+	text-align:right;
+}
+.main-content{
+	background: orange;
+}
+.shop-header{
+	background: red;
+	width: 300px;
+	margin-bottom: 20px;
+}
+.left-filter{
+	float: left;
+	width:200px;
+	min-height: 680px;
+	background: red;
+}
+.goods-items{
+	float: right;
+	width:700px;
+	min-height: 680px;
+	background: red;
+	font-size: 0px;
+}
+.product{
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	width: 220px;
+	min-height: 286px;
+	font-size: 14px;
+	background: grey;
+}
+.product:nth-child(3n){
+	margin-right: 0px;
+}
+.pagination{
+	background: grey;
+	width:200px;
+	min-height:50px;
+}
+
+
+.main-footer{
+	background: green;
+	min-height: 254px;
+	margin-bottom: 20px;
+}
+.footer-contacts{
+	background: red;
+	float:left;
+	margin-right: 20px;
+	width: 350px;
+	min-height: 88px;
+	text-align:left;
+	vertical-align: top;
+}
+.footer-social{
+	background: red;
+	float:left;
+	margin-right: 20px;
+	width: 200px;
+	min-height: 88px;
+	text-align:center;
+	vertical-align: top;
+}
+.footer-copyright{
+	background: red;
+	float:right;
+	width: 350px;
+	min-height: 88px;
+	text-align:right;
+	vertical-align: top;
+}
+
+
+.price-header{
+	background: red;
+	width: 180px;
+	margin-bottom: 55px;
+}
+.index-content{
+	text-align: center;
+}
+.price-title{
+	background: red;
+	margin-bottom: 20px;
+}
+.instrumentation{
+	float: left;
+	width: 460px;
+	min-height: 250px;
+	background: red;
+	margin-top: 70px;
+	margin-bottom: 20px;
+	text-align: left;
+}
+.pricelist{
+	float: right;
+	width: 460px;
+	min-height: 250px;
+	background: red;
+	margin-top: 70px;
+	margin-bottom: 20px;
+	text-align: left;
+}
+.left-column-info{
+	float: left;
+	width: 460px;
+	min-height: 250px;
+	background: red;
+	margin-bottom: 20px;
+	text-align: left;
+}
+.right-column-info{
+	float: right;
+	width: 460px;
+	min-height: 210px;
+	background: red;
+	margin-bottom: 20px;
+	padding-top: 40px;
+	text-align: left;
+}
