@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style2.css">
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css">
 	<title>BarbershopShop</title>
 </head>
-<body>
+<body class="shop-background">
 	<header class="main-header clearfix">
 		<div class="container clearfix">
 			<nav class="main-navigation">
@@ -39,14 +40,15 @@
 	<div class="main-content">
 		<div class="container clearfix">
 			<div class="shop-header">
-				<h1>Средства для ухода</h1>
+				<h1 class="shop-title">Средства для ухода</h1>
+
 				<div class="breadcrumbs">
 					<span>Главная</span>
-					<span>Магазин</span>	
+					<span class="shop-breadcrumb">Магазин</span>	
 					<span class="not-active">Средства для ухода</a>
 				</div>
 			</div>
-			<div class="index-content clearfix">
+			<div class="shop-content clearfix">
 				<div class="left-filter">
 					<form action="#" method="post">
 						<div class="producer-filter">
@@ -79,7 +81,7 @@
 							</label>		
 						</div>
 						<div class="goods-group">
-							<h3>группы товаров</h3>
+							<h3>группы товаров:</h3>
 								<label>
 									<input type="radio" name="goods-group" value="1" checked>Бритвенные принадлежности
 								</label>
@@ -89,7 +91,7 @@
 								<label>
 									<input type="radio" name="goods-group" value="3">аксессуары
 								</label>		
-							<button class="show">
+							<button class="show btn">
 								показать
 							</button>
 						</div>
@@ -97,57 +99,80 @@
 				</div>
 				<div class="goods-items">
 					<article class="product">
-						<img src="C:\Users\Иван\Documents\IvansRepository\barbershop\images\goods-item1-foto.jpg" width="220" height="165" alt="Набор для путешествий">
-						<p class="description">Набор для путешествий</p>
-						<p class="producer">"baxter of california"</p>
+						<a href="#" class="product-link">
+							<img src="images/goods-item1-foto.jpg" width="220" height="165" alt="Набор для путешествий">
+						</a>
+						<a href="#" class="product-link">
+							<p class="description">Набор для путешествий</p>
+							<p class="producer">"baxter of california"</p>
+						</a>
 						<span class="product-price">2900 руб.</span>
 						<a href="#" class="btn">Купить</a>
 					</article>
 					<article class="product">
-						<img src="C:\Users\Иван\Documents\IvansRepository\barbershop\images\goods-item2-foto.jpg" width="220" height="165"  alt="увлажняющий кондиционер">
-						<p class="description">увлажняющий кондиционер</p>
-						<p class="producer">"baxter of california"</p>
+						<a href="#" class="product-link">
+							<img src="images/goods-item2-foto.jpg" width="220" height="165"  alt="увлажняющий кондиционер">
+						</a>
+						<a href="#" class="product-link">
+							<p class="description">Увлажняющий кондицион	ер</p>
+							<p class="producer">"baxter of california"</p>
+						</a>
 						<span class="product-price">750 руб.</span>
 						<a href="" class="btn">Купить</a>
 					</article>
 					<article class="product">
-						<img src="C:\Users\Иван\Documents\IvansRepository\barbershop\images\goods-item3-foto.jpg" width="220" height="165"alt="гель для волос">
-						<p class="description">гель для волос</p>
-						<p class="producer">suavecito</p>
+						<a href="#" class="product-link">
+							<img src="images/goods-item3-foto.jpg" width="220" height="165"alt="гель для волос">
+						</a>
+						<a href="#" class="product-link">
+							<p class="description">Гель для волос</p>
+							<p class="producer">"suavecito"</p>
+						</a>
 						<span class="product-price">290 руб.</span>
 						<a href="#" class="btn">Купить</a>
 					</article>
 					<article class="product">
-						<img src="C:\Users\Иван\Documents\IvansRepository\barbershop\images\goods-item4-foto.jpg" width="220" height="165"alt="глина для укладки волос">
-						<p class="description">глина для укладки волос</p>
-						<p class="producer">american crew</p>
+						<a href="#" class="product-link">
+							<img src="images/goods-item4-foto.jpg" width="220" height="165"alt="глина для укладки волос">
+						</a>
+						<a href="#" class="product-link">
+							<p class="description">Глина для укладки вол	ос</p>
+							<p class="producer">"american crew"</p>
+						</a>
 						<span class="product-price">500 руб.</span>
 						<a href="#" class="btn">Купить</a>
 					</article>
 					<article class="product">
-						<img src="C:\Users\Иван\Documents\IvansRepository\barbershop\images\goods-item5-foto.jpg" width="220" height="165"alt="гель для волос">
-						<p class="description">гель для волос</p>
-						<p class="producer">american crew</p>
+						<a href="#" class="product-link">
+							<img src="images/goods-item5-foto.jpg" width="220" height="165"alt="гель для волос">
+						</a>
+						<a href="#" class="product-link">
+							<p class="description">Гель для волос</p>
+							<p class="producer">"american crew"</p>
+						</a>
 						<span class="product-price">300 руб.</span>
 						<a href="#" class="btn">Купить</a>
 					</article>
 					<article class="product">
-						<img src="C:\Users\Иван\Documents\IvansRepository\barbershop\images\goods-item6-foto.jpg" width="220" height="165"alt="набор для бритья">
-						<p class="description">набор для бритья</p>
-						<p class="producer">baxter of california</p>
+						<a href="#" class="product-link">
+							<img src="images/goods-item6-foto.jpg" width="220" height="165"alt="набор для бритья">
+						</a>
+						<a href="#" class="product-link">
+							<p class="description">Набор для бритья</p>
+							<p class="producer">"baxter of california"</p>
+						</a>
 						<span class="product-price">3900 руб.</span>
 						<a href="#" class="btn">Купить</a>
 					</article>
 					<div class="pagination">
-						<a href="#" class="btn btn-active">1</a>
-						<a href="#" class="btn">2</a>
+						<a href="#" class="btn">1</a>
+						<a href="#" class="btn btn-active">2</a>
 						<a href="#" class="btn">3</a>
 						<a href="#" class="btn">4</a>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
 	<footer class="main-footer">
 		<div class="container clearfix">
@@ -169,6 +194,6 @@
 					</section>
 				</div>		
 	</footer>
-	
+	</div>
 </body>
 </html>

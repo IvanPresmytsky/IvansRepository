@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="http://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<title>nerd's shop</title>
+</head>
+<body>
+	<header class="main-header">
+		<div class="container clearfix">
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/logo3.png" width="139" height="56" alt="logo">
+				</a>
+			</div>
+			<nav class="main-navigation">
+				<ul>
+					<li>
+						<a href="#">Студия</a>
+					</li>
+					<li>
+						<a href="#">Клиенты</a>
+					</li>
+					<li>
+						<a href="nerds-catalog.html" class="active">Магазин</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+					<li>
+						<a class="basket icon-basket" href="#">Корзина</a>
+					</li>
+				</ul>
+			</nav>
+			<h1 class="catalog-main-title">Пожалуйста заполните форму</h1>
+		</div>
+	</header>
+
+	<div class="main-content clearfix">
+	<div class="write-us individual clearfix">
+		<form action="/echo" method="post">
+			<div class="form-login-container">
+				<p><b>Ваше имя:</b></p>
+				<input type="text" class="login" name="login" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА">
+			</div>
+			<div class="form-email-container">
+				<p><b>Ваш e-mail:</b></p>
+				<input type="text" class="e-mail" name="e-mail" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
+			</div>
+			<div class="form-mailbody-container">
+				<p><b>Текст письма:</b></p>
+				<textarea class="ail-text" placeholder="В СВОБОДНОЙ ФОРМЕ" name="mail-text"></textarea> 
+				<input type="submit" class="btn">
+				<input type="reset" class="btn">
+			</div>
+			<div class="form-close">закрыть</div>
+		</form>
+	</div>
+	</div>
+	
+	<footer class="main-footer">
+		<div class="container clearfix">
+			<div class="footer-social">
+				<div class="social-buttons">
+					<a href="#" class="social-btn-vk">
+						<i class="icon-vk"></i>
+					</a>
+					<a href="#" class="social-btn-fb">
+						<i class="icon-facebook"></i>
+					</a>
+					<a href="#" class="social-btn-inst">
+						<i class="icon-instagramm"></i>
+					</a>
+				</div>
+				<div class="social-text">
+					<h2 class="social-title">
+						Давайте дружить, это выгодно
+					</h2>
+					<p>Скидка 10% для друзей из социальных сетей</p>
+				</div>
+			</div>
+		</div>
+	</footer>

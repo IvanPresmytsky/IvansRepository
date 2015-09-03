@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="http://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 	<title>index</title>
 </head>
 <body>
 	<header class="main-header">
 		<div class="container clearfix">
 			<div class="logo">
-				<a class href="#">
-					<img src="C:\Users\Иван\Documents\IvansRepository\nerds\images\logo.png" width="139" height="56" alt="logo">
+				<a href="#">
+					<img src="images/logo3.png" width="139" height="56" alt="logo">
 				</a>
 			</div>
 			<nav class="main-navigation">
@@ -21,29 +23,59 @@
 						<a href="#">Клиенты</a>
 					</li>
 					<li>
-						<a href="#">Магазин</a>
+						<a href="nerds-catalog.html">Магазин</a>
 					</li>
 					<li>
 						<a href="#">Контакты</a>
 					</li>
 					<li>
-						<a href="#">Корзина</a>
+						<a class="basket icon-basket" href="#">Корзина</a>
 					</li>
 				</ul>
 			</nav>
-			<div class="features-gallery">
-				<div class="text">
+			<div class="features-gallery first clearfix">
+				<div class="features-gallery-text">
 					<h2 class="slogan">Долго, дорого, скрупулезно.</h2>
 					<p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
 					<a href="#" class="btn">узнать больше</a>
-				</div>
-				<div class="features-gallery-controls">
-					<a href="#"></a>
-					<a href="#"></a>
-					<a href="#"></a>
+					<div class="features-gallery-controls">
+						<a class="current" href="#"></a>
+						<a href="#"></a>
+						<a href="#"></a>
+					</div>
 				</div>
 				<div class="features-gallery-img">
-					<img src="C:\Users\Иван\Documents\IvansRepository\nerds\images\gajets-picture.png" width="338" height="231" alt="gajets">
+					<img class="first-slide" src="images/gajets-picture.png" width="338" height="231" alt="gajets">
+				</div>
+			</div>
+			<div class="features-gallery second clearfix">
+				<div class="features-gallery-text">
+					<h2 class="slogan">Любите ли вы математику, как любим ее мы?</h2>
+					<p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им  возможность все посчитать</p>
+					<a href="#" class="btn">узнать больше</a>
+					<div class="features-gallery-controls">
+						<a  href="#"></a>
+						<a class="current" href="#"></a>
+						<a href="#"></a>
+					</div>
+				</div>
+				<div class="features-gallery-img">
+					<img class="second-slide" src="images/calculator-picture.png" width="230" height="249" alt="calculator">
+				</div>
+			</div>
+			<div class="features-gallery third clearfix">
+				<div class="features-gallery-text">
+					<h2 class="slogan">Только наркотики, только хардкор!</h2>
+					<p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+					<a href="#" class="btn">узнать больше</a>
+					<div class="features-gallery-controls">
+						<a  href="#"></a>
+						<a href="#"></a>
+						<a class="current" href="#"></a>
+					</div>
+				</div>
+				<div class="features-gallery-img">
+					<img class="third-slide" src="images/robot-picture.png" width="333" height="319" alt="robot">
 				</div>
 			</div>
 		</div>
@@ -51,17 +83,17 @@
 
 	<div class="main-content">
 		<div class="container clearfix">
-			<div class="features-row">
+			<div class="features-row clearfix">
 				<div class="features-left-column">
-					<img src="C:\Users\Иван\Documents\IvansRepository\nerds\images\website-picture.jpg" width="240" height="124" alt="Веб-сайты">
+					<img src="images/website-picture.jpg" width="240" height="124" alt="Веб-сайты">
 					<h2 class="features-title">Веб-сайты</h2>
 					<p>
-						Мир никогда не будет прежним после того как увидит наш сайт
+						Мир никогда не будет прежним после того как увидит наш сайт!
 					</p>
 					<a href="#" class="btn">Заказать</a>
 				</div>
 				<div class="features-central-column">
-					<img src="C:\Users\Иван\Documents\IvansRepository\nerds\images\apps-picture.jpg" width="240" height="124" alt="Приложения">
+					<img src="images/apps-picture.jpg" width="240" height="124" alt="Приложения">
 					<h2 class="features-title">Приложения</h2>
 					<p>
 						Покорите топ-10 приложений в AppStore и Google Play
@@ -69,15 +101,15 @@
 					<a href="#" class="btn">Заказать</a>
 				</div>
 				<div class="features-right-column">
-					<img src="C:\Users\Иван\Documents\IvansRepository\nerds\images\presentation-picture.jpg" width="240" height="124" alt="Презентации">
+					<img src="images/presentation-picture.jpg" width="240" height="124" alt="Презентации">
 					<h2 class="features-title">Презентации</h2>
 					<p>
-						Вы даже не подозреваете, насколько вы изумительны
+						Вы даже не подозреваете, насколько вы изумительны!
 					</p>
 					<a href="" class="btn">Заказать</a>
 				</div>
 			</div>
-			<div class="description-content">
+			<div class="description-content clearfix">
 				<div class="description-left-column">
 					<h2 class="description-title">
 						Мы - маленькая, но гордая дизайн студия из Краснодара.
@@ -94,8 +126,8 @@
 						<li>Слайдшоу и видео для корпоративных презентаций</li>
 					</ul>
 				</div>
-				<div class="description-left-column">
-					<img src="C:\Users\Иван\Documents\IvansRepository\nerds\images\logo2.png" width="187" height="118" alt="nerds">
+				<div class="description-right-column">
+					<img src="images/logo2.png" width="187" height="118" alt="nerds">
 					<h3 class="description-list-title">
 						как мы работаем:
 					</h3>
@@ -106,43 +138,48 @@
 					</ul>
 				</div>
 			</div>
-			<div class="product-examples">
-				<a href="#">
-					<img src="C:\Users\Иван\Documents\IvansRepository\nerds\images\glukhanko.png" width="198" height="37" alt="glukhanko">
-				</a>
-				<a href="#">
-					<img src="C:\Users\Иван\Documents\IvansRepository\nerds\images\htmlacademy.png" width="199" height="50" alt="html Academy">
-				</a>
-				<a href="#">
-					<img src="C:\Users\Иван\Documents\IvansRepository\nerds\images\borodynsky.png" width="209" height="116" alt="borodinski">
-				</a>
-			</div>
-			<div class="map-and-contacts">
-				<div class="map">
-					<img src="C:\Users\Иван\Documents\IvansRepository\nerds\images\nerds-map-picture.jpg" width="1200" height="785" alt="Карта">
+			<div class="product-examples clearfix">
+				<div class="product-example-glukhanko">
+					<a href="#">
+						<img src="images/glukhanko.png" width="198" height="37" alt="glukhanko">
+					</a>
 				</div>
+				<div class="product-example-htmlAcademy">
+					<a href="#">
+						<img src="images/htmlacademy.png" width="199" height="50" alt="html Academy">
+					</a>
+				</div>
+				<div class="product-example-borodinski">
+					<a href="#">
+						<img src="images/borodynsky.png" width="209" height="116" alt="borodinski">
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="map-and-contacts">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d999.2933083792902!2d30.319607617182683!3d59.93900137999871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1438334542232">
+				</iframe>	
 				<div class="contacts">
 					<h2 class="contacts-title">NERDS DESIGN STUDIO</h2>
 					<p>191186. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 					<p>тел +7(812)275-75-75</p>
-					<a href="" class="btn">напишите нам</a>
+					<a class="btn" href="write-us" >напишите нам</a>
 				</div>
 			</div>
-		</div>
 	</div>
-
+		
 	<footer class="main-footer">
-		<div class="container-clearfix">
+		<div class="container clearfix">
 			<div class="footer-social">
 				<div class="social-buttons">
-					<a href="#" class="social-btn">
-						<img src="#" alt="Вконтакте">
+					<a href="#" class="social-btn-vk">
+						<i class="icon-vk"></i>
 					</a>
-					<a href="#" class="social-btn">
-						<img src="#" alt="Фейсбук">
+					<a href="#" class="social-btn-fb">
+						<i class="icon-facebook"></i>
 					</a>
-					<a href="#" class="social-btn">
-						<img src="#" alt="Инстаграм">
+					<a href="#" class="social-btn-inst">
+						<i class="icon-instagramm"></i>
 					</a>
 				</div>
 				<div class="social-text">
@@ -153,6 +190,25 @@
 				</div>
 			</div>
 		</div>
-	</footer>																													
+	</footer>														
+	<div class="write-us">
+		<form action="/echo" method="post">
+			<div class="form-login-container">
+				<p><b>Ваше имя:</b></p>
+				<input class="login" name="login" type="text" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА">
+			</div>
+			<div class="form-email-container">
+				<p><b>Ваш e-mail:</b></p>
+				<input class="e-mail" name="e-mail" type="text" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
+			</div>
+			<div class="form-mailbody-container">
+				<p><b>Текст письма:</b></p>
+				<textarea class="ail-text" name="mail-text" placeholder="В СВОБОДНОЙ ФОРМЕ"></textarea> 
+				<input class="btn" type="submit" >
+				<input class="btn" type="reset" >
+			</div>
+			<div class="form-close">закрыть</div>
+		</form>
+	</div>
 </body>
 </html>
