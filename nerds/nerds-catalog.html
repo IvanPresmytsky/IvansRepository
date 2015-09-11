@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styleMin.css">
 	<link href="http://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<!-- Русский сай - русский title -->
 	<title>nerd's shop</title>
 </head>
 <body>
@@ -43,8 +44,10 @@
 			<div class="product-filter">
 				<form action="#" method="post">
 					<div class="price-filter">
+						<!-- Есть ещё один способо как сделать эти разделы, через fieldset и legend -->
 						<h2 class="filter-title">Стоимость:</h2>
 						<div class="price-filter-scroll">
+							<!-- Это точно не ссылки, в курсе было как их делать -->
 							<a class="scroll-left-circle" href="#"></a>
 							<a class="scroll-right-circle" href="#"></a>
 						</div>
@@ -77,6 +80,7 @@
 						<input type="checkbox" id="shopping-cart" name="shopping cart">
 						<label for="shopping-cart">Корзина</label>	
 					</div>
+					<!-- где у кнопки type и name? -->
 					<button class="show-btn">показать</button>
 				</form>
 			</div>
@@ -95,6 +99,7 @@
 							<img src="images/aviator-picture.jpg" width="240" height="240" alt="aviator">
 						</div>
 						<div class="buy-window">
+							<!-- h1 может быть только один на странице -->
 							<h1 class="buy-window-title">Sunset</h1>
 							<p>Интернет-магазин с личным кабинетом</p>
 							<a href="#" class="btn">10 000P</a>
@@ -152,6 +157,7 @@
 					</div>
 				</div>
 				<div class="pagination">
+					<!-- в css кнопкам ширина не задаётся. не проходит пункт переполнения -->
 					<a href="#" class="btn-pagination btn-active">1</a>
 					<a href="#" class="btn-pagination">2</a>
 					<a href="#" class="btn-pagination">3</a>
@@ -195,7 +201,8 @@
 			</div>
 		</div>
 	</footer>
-
+	
+	<!-- Форма должна прокручиваться вместе со страницей.  -->
 	<div class="write-us">
 		<form action="/echo" method="post">
 			<div class="form-login-container">
@@ -208,6 +215,7 @@
 			</div>
 			<div class="form-mailbody-container">
 				<p><b>Текст письма:</b></p>
+				<!-- textarea не должна изменять свои размеры -->
 				<textarea class="mail-text" placeholder="В СВОБОДНОЙ ФОРМЕ" name="mail-text"></textarea> 
 				<input class="btn" type="submit" value="Отправить">
 				<input class="btn" type="reset" value="Отмена">
