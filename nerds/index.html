@@ -10,14 +10,14 @@
 	<header class="main-header">
 		<div class="container clearfix">
 			<div class="logo">
-				<a href="#">
+				<a href="index.html">
 					<img src="images/logo3.png" width="139" height="56" alt="logo">
 				</a>
 			</div>
 			<nav class="main-navigation">
 				<ul>
 					<li>
-						<a href="#">Студия</a>
+						<a href="#" class="active">Студия</a>
 					</li>
 					<li>
 						<a href="#">Клиенты</a>
@@ -29,21 +29,18 @@
 						<a href="#">Контакты</a>
 					</li>
 					<li>
-						<a class="basket icon-basket" href="#">Корзина</a>
+						<a class="basket" href="#"><i class="icon-basket"></i>Корзина</a>
 					</li>
 				</ul>
 			</nav>
-			<div class="features-gallery first clearfix">
+			<div class="features-gallery first slider-visible clearfix">
 				<div class="features-gallery-text">
 					<h2 class="slogan">Долго, дорого, скрупулезно.</h2>
 					<p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
 					<a href="#" class="btn">узнать больше</a>
-					<div class="features-gallery-controls">
-						<a class="current" href="#"></a>
-						<a href="#"></a>
-						<a href="#"></a>
-					</div>
+					
 				</div>
+				
 				<div class="features-gallery-img">
 					<img class="first-slide" src="images/gajets-picture.png" width="338" height="231" alt="gajets">
 				</div>
@@ -53,11 +50,6 @@
 					<h2 class="slogan">Любите ли вы математику, как любим ее мы?</h2>
 					<p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им  возможность все посчитать</p>
 					<a href="#" class="btn">узнать больше</a>
-					<div class="features-gallery-controls">
-						<a  href="#"></a>
-						<a class="current" href="#"></a>
-						<a href="#"></a>
-					</div>
 				</div>
 				<div class="features-gallery-img">
 					<img class="second-slide" src="images/calculator-picture.png" width="230" height="249" alt="calculator">
@@ -68,15 +60,15 @@
 					<h2 class="slogan">Только наркотики, только хардкор!</h2>
 					<p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
 					<a href="#" class="btn">узнать больше</a>
-					<div class="features-gallery-controls">
-						<a  href="#"></a>
-						<a href="#"></a>
-						<a class="current" href="#"></a>
-					</div>
 				</div>
 				<div class="features-gallery-img">
 					<img class="third-slide" src="images/robot-picture.png" width="333" height="319" alt="robot">
 				</div>
+			</div>
+			<div class="features-gallery-controls">
+				<a class="first-control current" href="#"></a>
+				<a class="second-control" href="#"></a>
+				<a  class="third-control" href="#"></a>
 			</div>
 		</div>
 	</header>
@@ -163,7 +155,7 @@
 					<h2 class="contacts-title">NERDS DESIGN STUDIO</h2>
 					<p>191186. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 					<p>тел +7(812)275-75-75</p>
-					<a class="btn" href="write-us" >напишите нам</a>
+					<a class="btn" href="write-us.html" >напишите нам</a>
 				</div>
 			</div>
 	</div>
@@ -195,20 +187,23 @@
 		<form action="/echo" method="post">
 			<div class="form-login-container">
 				<p><b>Ваше имя:</b></p>
-				<input class="login" name="login" type="text" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА">
+				<input class="login" name="login" type="text" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА" required>
 			</div>
 			<div class="form-email-container">
 				<p><b>Ваш e-mail:</b></p>
-				<input class="e-mail" name="e-mail" type="text" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
+				<input class="e-mail" name="e-mail" type="text" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА" required>
 			</div>
 			<div class="form-mailbody-container">
 				<p><b>Текст письма:</b></p>
-				<textarea class="ail-text" name="mail-text" placeholder="В СВОБОДНОЙ ФОРМЕ"></textarea> 
-				<input class="btn" type="submit" >
-				<input class="btn" type="reset" >
+				<textarea class="mail-text" name="mail-text" placeholder="В СВОБОДНОЙ ФОРМЕ"></textarea> 
+				<input class="btn" type="submit" value="Отправить">
+				<input class="btn" type="reset" value="Отмена">
 			</div>
-			<div class="form-close">закрыть</div>
+			<div class="form-close">X</div>
 		</form>
 	</div>
+	
+	<script src="js/script.js"></script>
+	
 </body>
 </html>

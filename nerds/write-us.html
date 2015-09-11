@@ -17,19 +17,19 @@
 			<nav class="main-navigation">
 				<ul>
 					<li>
-						<a href="#">Студия</a>
+						<a href="index.html">Студия</a>
 					</li>
 					<li>
 						<a href="#">Клиенты</a>
 					</li>
 					<li>
-						<a href="nerds-catalog.html" class="active">Магазин</a>
+						<a href="nerds-catalog.html">Магазин</a>
 					</li>
 					<li>
 						<a href="#">Контакты</a>
 					</li>
 					<li>
-						<a class="basket icon-basket" href="#">Корзина</a>
+						<a class="basket" href="#"><i class="icon-basket"></i>Корзина</a>
 					</li>
 				</ul>
 			</nav>
@@ -41,17 +41,17 @@
 		<form action="/echo" method="post">
 			<div class="form-login-container">
 				<p><b>Ваше имя:</b></p>
-				<input type="text" class="login" name="login" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА">
+				<input type="text" class="login" name="login" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА" required>
 			</div>
 			<div class="form-email-container">
 				<p><b>Ваш e-mail:</b></p>
-				<input type="text" class="e-mail" name="e-mail" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
+				<input type="text" class="e-mail" name="e-mail" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА" required>
 			</div>
 			<div class="form-mailbody-container">
 				<p><b>Текст письма:</b></p>
 				<textarea class="ail-text" placeholder="В СВОБОДНОЙ ФОРМЕ" name="mail-text"></textarea> 
-				<input type="submit" class="btn">
-				<input type="reset" class="btn">
+				<input class="btn" type="submit" value="Отправить">
+				<input class="btn" type="reset" value="Отмена">
 			</div>
 		</form>
 	</div>

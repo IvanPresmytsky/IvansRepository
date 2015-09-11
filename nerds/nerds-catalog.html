@@ -17,7 +17,7 @@
 			<nav class="main-navigation">
 				<ul>
 					<li>
-						<a href="#">Студия</a>
+						<a href="index.html">Студия</a>
 					</li>
 					<li>
 						<a href="#">Клиенты</a>
@@ -29,7 +29,7 @@
 						<a href="#">Контакты</a>
 					</li>
 					<li>
-						<a class="basket icon-basket" href="#">Корзина</a>
+						<a class="basket" href="#"><i class="icon-basket"></i>Корзина</a>
 					</li>
 				</ul>
 			</nav>
@@ -85,7 +85,7 @@
 					<a href="#" class="sort-btn">по цене</a>
 					<a href="#" class="sort-btn">по типу</a>
 					<a href="#" class="sort-btn">по функционалу</a>
-					<button class="btn-down"></button>
+					<button class="btn-down btn-active"></button>
 					<button class="btn-up"></button>
 				</div>
 				<div class="product-gallery-items">
@@ -165,7 +165,7 @@
 					<h2 class="contacts-title">NERDS DESIGN STUDIO</h2>
 					<p>191186. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 					<p>тел +7(812)275-75-75</p>
-					<a href="" class="btn">напишите нам</a>
+					<a href="write-us.html" class="btn">напишите нам</a>
 			</div>
 		</div>
 		
@@ -199,21 +199,23 @@
 		<form action="/echo" method="post">
 			<div class="form-login-container">
 				<p><b>Ваше имя:</b></p>
-				<input type="text" class="login" name="login" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА">
+				<input type="text" class="login" name="login" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА" required>
 			</div>
 			<div class="form-email-container">
 				<p><b>Ваш e-mail:</b></p>
-				<input type="text" class="e-mail" name="e-mail" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
+				<input type="text" class="e-mail" name="e-mail" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА" required>
 			</div>
 			<div class="form-mailbody-container">
 				<p><b>Текст письма:</b></p>
-				<textarea class="ail-text" placeholder="В СВОБОДНОЙ ФОРМЕ" name="mail-text"></textarea> 
-				<input type="submit" class="btn">
-				<input type="reset" class="btn">
+				<textarea class="mail-text" placeholder="В СВОБОДНОЙ ФОРМЕ" name="mail-text"></textarea> 
+				<input class="btn" type="submit" value="Отправить">
+				<input class="btn" type="reset" value="Отмена">
 			</div>
-			<div class="form-close">закрыть</div>
+			<div class="form-close">X</div>
 		</form>
 	</div>
-	
+
+	<script src="js/scriptCatalog.js"></script>
+
 </body>
 </html>
