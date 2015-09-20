@@ -1,0 +1,460 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+
+body {
+	width: 1876px;
+	margin: 0 auto;
+	padding: 0;
+
+	
+	color: #263a50;
+}
+
+h1 {
+	padding: 0;
+	margin: 0;
+
+	display: inline-block;
+	font-family: "serif";
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+li {
+	display: inline-block;
+	color: #fff;
+}
+
+a {
+	font-family: "San-serif", Arial;
+	font-size: 16px;
+	line-height: 20px;
+	text-decoration: none;
+	color: #263a50;
+}
+
+article img {
+	width: 136px;
+	height: 84px;
+
+	background: red;
+	float: left;
+	margin-right: 15px;
+}
+
+article h3 {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 7px;
+
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: bold;
+
+	color: #263a50;
+}
+
+.news-date {
+	font-size: 14px;
+	line-height: 18px;
+	color: #8592a3;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.container {
+	width: 1756px;
+	margin: 0 auto;
+	ackground: yellow;
+}
+
+.main-header {
+	margin-top: 60px;
+	margin-bottom: 60px;
+
+	background: #ebebeb;
+}
+
+.header {
+	background: #3d4c54;
+	color: #fff;
+}
+
+.logo-and-nav {
+	color: #fff;
+	border: 1px solid #2a3f49;
+	outline: 1px solid #5b646a;
+	background: #3d4c54;
+
+}
+
+.logo {
+	float: left;
+	margin-right: 212px;
+	padding-top: 15px;
+}
+
+.main-navigation {
+	min-width: 960px;
+}
+
+.main-navigation ul {
+	font-size: 0;
+}
+
+.main-navigation li {
+	padding: 22px 24px;
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: bold;
+	border-left: 2px solid #485a63;
+}
+
+.main-navigation li:last-child{
+	border-right: 2px solid #485a63;
+}
+
+.main-navigation li a {
+	color: #fff;
+}
+
+.random-news {
+	padding: 45px 0;
+	
+	font-size: 0px;
+	background: #ebebeb;
+
+	border-bottom: 2px solid #d5d5d5;
+}
+
+.random-news article {
+	display: inline-block;
+	margin-right: 44px;
+	width: 406px;
+	padding: 15px;
+	
+	font-size: 16px;
+	line-height: 20px;
+
+	background: #fff;
+	border: 1px solid #f4f4f4;
+}
+
+.random-news article:nth-child(4n) {
+	margin-right: 0;
+}
+
+.breaking-news {
+	height: 63px;
+	background: #f7f7f7;
+
+	vertical-align: middle;
+
+	border-bottom: 2px solid #d5d5d5;
+}
+
+.breaking-news h2 {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0;
+	margin: 0;
+	padding: 8px 35px 8px 9px;
+	margin-right: 152px;
+	margin-top: 8px; 
+
+	font-size: 22px;
+	line-height: 28px;
+	font-weight: bold;
+	color: #fff;
+
+	background: #6c7783;
+
+	outline: 1px solid #526272;
+}
+
+.breaking-news h3 {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	vertical-align: middle;
+	width: 230px;
+} 
+
+.search {
+	display: inline-block;
+	vertical-align: middle;
+	height: 60px;
+	float: right;
+}
+
+.breaking-news span {
+	margin-right: 82px;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.breaking-news input {
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	height: 100%
+}
+
+.main-content {
+	margin-bottom: 90px;
+}
+
+.content-row {
+	margin-bottom: 45px;
+}
+
+.popular-news-gallery {
+	position: relative;
+
+	float: left;
+	margin-right: 28px;
+	width: 761px;
+	ackground: green;
+
+	utline: 2px solid #ededed;
+}
+
+.gallery-main-img img {
+	width: 761px;
+	height: 406px;
+
+	background: red;
+}
+
+.popular-news-gallery-slides {
+	padding: 22px 10px;
+
+	order: 2px solid #ededed;
+	ackground: blue;
+
+	outline: 2px solid #ededed;
+}
+
+.popular-news-gallery-slides img {
+	margin-right: 22px;
+
+	width: 164px;
+	height: 94px;
+
+	background: red;
+
+	border: 6px solid #eee;
+}
+
+.popular-news-gallery-slides img:nth-child(4n) {
+	margin-right: 0;
+}
+
+.popular-news-gallery-slides img.slide-active {
+	border: 6px solid #53626b;
+}
+
+.popular-news-gallery-text {
+	position: absolute;
+	top: 316px;
+
+	width: 761px;
+	height: 90px;
+
+	background: yellow;
+	opacity: 0.3;
+}
+
+.popular-news-container {
+	float: left;
+	width: 367px;
+
+	background: #f2f2f2;
+}
+
+.popular-news-title {
+	margin: 0;
+	padding: 0;
+	padding: 24px 0 22px 0;
+
+	text-align: center;
+
+	outline: 1px solid #213944;
+}
+
+.popular-news-container div {
+	order: 2px solid red;
+	padding: 27px 26px;
+}
+
+.popular-news-container a{
+	display: block;
+	padding: 22px;
+	margin-bottom: 20px;
+
+	width: 316px;
+	height: 87px;
+
+	background: #fff;
+}
+
+.popular-news-container a:last-child {
+	margin-bottom: 0;
+}
+
+.popular-news-container h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.news-filter {
+	float: right;
+	width: 556px;
+	background: green;
+}
+
+.news-filter-header {
+	height: 76px;
+
+	outline: 1px solid #213944;
+}
+.news-filter-header li {
+	width: 182px;
+}
+
+.news-filter-header a {
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: bold;
+
+	color: #fff;
+}
+.news-filter-container article {
+	width: 510px;
+	height: 130px;
+}
+
+.content-header {
+	border-bottom: 2px solid #e8ecee;
+}
+.content-header h2{
+	display: inline-block;
+
+	padding: 0;
+	padding: 12px 22px 14px 24px;
+	margin: 0;
+
+	color: #000;
+	background: #e9ecee;
+}
+.hot-stuff {
+	float: left;
+	width: 1156px;
+	background: green;
+}
+
+.recent-posts {
+	float: right;
+	width: 556px;
+	background: green;
+}
+
+.game-news {
+	float: left;
+	margin-right: 36px;
+	width: 557px;
+	background: green;
+}
+
+.sport-news {
+	float: left;
+	margin-right: 50px;
+	width: 557px;
+	background: green;
+}
+
+.technology-news {
+	float: right;
+	width: 556px;
+	background: green;
+}
+
+.fashion-news {
+	float: left;
+	width: 1156px;
+	background: green;
+}
+
+.video-gallery {
+	float: right;
+	width: 556px;
+	background: green;
+}
+
+.all-news-gallery {
+	background: green;
+}
+
+.all-news-gallery article {
+	display:inline-block;
+}
+
+.latest-news {
+	float: left;
+	margin-right: 44px;
+	width: 406px;
+	background: green;
+}
+
+.latest-tweets {
+	float: left;
+	margin-right: 44px;
+	width: 406px;
+	background: green;
+}
+
+.footer-content {
+	float: right;
+	width: 854px;
+	background: green;
+}
+
+.tag-cloud {
+	float: left;
+	width: 406px;
+	background: blue;
+}
+
+.social {
+	float: right;
+	margin-bottom: 62px;
+	width: 404px;
+	background: blue;
+}
+
+.logo-and-info{
+	float: left;
+	width: 854px;
+	background: blue;
+}
+
+.copyright {
+	background: #23323f;
+}

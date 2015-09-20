@@ -183,17 +183,24 @@ body {
 	color: #b1b1b1;
 }
 
-.features-gallery {
+.slider {
+	width: 880px;
+}
+
+.slide-first,
+.slide-second,
+.slide-third{
 	float: left;
 	width: 880px;
 	display: none;
 }
 
-.slider-visible{
+
+.slide-visible{
 	display: block;
 }
 
-.features-gallery-text {
+.slide-text {
 	float:left;
 	width: 480px;
 
@@ -203,7 +210,7 @@ body {
 	font-size: 0px;
 }
 
-.features-gallery-controls {
+.slider-controls {
 	position: absolute;
 	bottom: 90px;
 	right: 50%;
@@ -217,7 +224,7 @@ body {
 	font-size: 0px;
 }
 
-.features-gallery-controls a {
+.slider-controls a {
 	display: inline-block;
 	margin-right: 9px;
 	width: 4px;
@@ -228,48 +235,48 @@ body {
 	border-radius: 50%;
 }
 
-.features-gallery-controls a:last-child {
+.slider-controls a:last-child {
 	margin-right: 0px;
 }
 
-.features-gallery-controls .current {
+.slider-controls .current {
 	background: #c1c1c1;
 }
-.features-gallery-img {
+.slide-img {
 	float:right;
 	margin-left: 60px;
 	width: 340px;
 }
 
-.features-gallery.second .features-gallery-img {
+.slide-second .slide-img {
 	float:right;
 	width: 230px;
 	height: 249px;
 }
 
-.features-gallery.third .features-gallery-img {
+.slide-third .slide-img {
 	float:right;
 	width: 333px;
 	height: 319px;
 }
 
-.features-gallery-img .first-slide {
+.slide-img .slide-first-img {
 	width: 338px;
 	height: 231px;
 } 
 
-.features-gallery-img .second-slide {
+.slide-img .slide-second-img {
 	width: 230px;
 	height: 249px;
 } 
 
-.features-gallery-img .third-slide {
+.slide-img .slide-third-img {
 	width: 333px;
 	height: 319px;
 
 }
 
-.features-gallery-text .slogan {
+.slide-text .slogan {
 	padding: 0;
 	margin: 0;
 	margin-bottom: 20px;
@@ -279,7 +286,7 @@ body {
   	text-align: left;
 }
 
-.features-gallery-text p {
+.slide-text p {
 	margin: 0;
 	margin-bottom: 30px;
 	padding: 0;
@@ -314,7 +321,7 @@ body {
 	background: #b63538;
 }
 
-.features-gallery-text .btn {
+.slide-text .btn {
 	display: inline-block;
 	width: 240px;
 	padding: 15px 0px;
@@ -328,11 +335,11 @@ body {
 	background: #fb565a;
 }
 
-.features-gallery-text .btn:hover {
+.slide-text .btn:hover {
 	background: #d6494d;
 }
 
-.features-gallery-text .btn:active {
+.slide-text .btn:active {
 	padding-top: 12px;
 	border-top: 3px solid #9b2d30;
 	
@@ -370,70 +377,66 @@ body {
 	line-height: 22px;
 }
 
-.features-left-column .btn {
+.features-column {
+	float:left;
+	margin-right: 80px;
+	width: 240px;
+	min-height: 380px;	
+}
+
+.features-column:nth-child(3n) {
+	float: right;
+	margin-right: 0;
+	width: 240px;
+	min-height: 380px;
+}
+
+.features-column:nth-child(1) .btn {
 	background: #fb565a;
 }
 
-.features-left-column .btn:hover {	
+.features-column:nth-child(1) .btn:hover {	
 	background: #d6494d;
 }
 
-.features-left-column .btn:active {
+.features-column:nth-child(1) .btn:active {
 	padding-top: 12px;
 
 	border-top: 3px solid #9b2d30;
 	background: #b63538;
 } 
 
-.features-central-column .btn {
+.features-column:nth-child(2) .btn {
 	background: #00ca74;
 }
 
-.features-central-column .btn:hover {
+.features-column:nth-child(2) .btn:hover {
 	background: #01a25e;
 }
 
-.features-central-column .btn:active {
+.features-column:nth-child(2) .btn:active {
 	padding-top: 12px;
 
 	border-top: 3px solid #007b47;
 	background: #009053;
 }
 
-.features-right-column .btn {
+.features-column:nth-child(3) .btn {
 	background: #efc84a;
 }
 
-.features-right-column .btn:hover {
+.features-column:nth-child(3) .btn:hover {
 	background: #d6ae2c;
 }
 
-.features-right-column .btn:active {
+.features-column:nth-child(3) .btn:active {
 	padding-top: 12px;
 
 	border-top: 3px solid #a3841f;
 	background: #d6ae2c;
 }
 
-.features-left-column {
-	float:left;
-	margin-right: 80px;
-	width: 240px;
-	min-height: 380px;
-	
-}
-.features-central-column {
-	float:left;
-	width: 240px;
-	min-height: 380px;
-	margin-right: 80px;
-}
 
-.features-right-column {
-	float: right;
-	width: 240px;
-	min-height: 380px;
-}
 
 .description-content {
 	padding-top: 60px;
@@ -587,7 +590,7 @@ body {
 	width: 100%;
 	height: 415px;
 
-	background: url("../images/nerds-map-picture.jpg") no-repeat center;	
+	background: #dde2e6 url("../images/nerds-map-picture.jpg") no-repeat center;	
 }
 
 .map-and-contacts iframe {
@@ -1323,8 +1326,8 @@ body {
 .write-us {
 	display: none;
 
-	position: absolute;
-	top: 0;
+	position: fixed;
+	bottom: 30%;
 	left: 50%;
 	z-index: 20;
 	
@@ -1341,6 +1344,7 @@ body {
 }
 
 .write-us-visible {
+	position: fixed;
 	display: block;	
 }
 

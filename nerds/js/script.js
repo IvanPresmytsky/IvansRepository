@@ -1,7 +1,7 @@
 		
-		var firstSlide = document.querySelector(".first");
-		var secondSlide = document.querySelector(".second");
-		var thirdSlide = document.querySelector(".third");
+		var firstSlide = document.querySelector(".slide-first");
+		var secondSlide = document.querySelector(".slide-second");
+		var thirdSlide = document.querySelector(".slide-third");
 		var controlFirst = document.querySelector(".first-control");
 		var controlSecond = document.querySelector(".second-control");
 		var controlThird = document.querySelector(".third-control");
@@ -17,15 +17,15 @@
 		
 		controlFirst.addEventListener("click", function(event){
 			event.preventDefault();
-			firstSlide.classList.add("slider-visible");
+			firstSlide.classList.add("slide-visible");
 			controlFirst.classList.add("current");
-			if (secondSlide.classList.contains("slider-visible")&&controlSecond.classList.contains("current")) {
-				secondSlide.classList.remove("slider-visible");
+			if (secondSlide.classList.contains("slide-visible")&&controlSecond.classList.contains("current")) {
+				secondSlide.classList.remove("slide-visible");
 				controlSecond.classList.remove("current");
 				console.log("first control pressed");
 			}
-			if (thirdSlide.classList.contains("slider-visible")&&controlThird.classList.contains("current")) {
-				thirdSlide.classList.remove("slider-visible");
+			if (thirdSlide.classList.contains("slide-visible")&&controlThird.classList.contains("current")) {
+				thirdSlide.classList.remove("slide-visible");
 				controlThird.classList.remove("current");
 				console.log("first control pressed");
 			}
@@ -33,15 +33,15 @@
 			
 		controlSecond.addEventListener("click", function(event){
 			event.preventDefault();
-			secondSlide.classList.add("slider-visible");
+			secondSlide.classList.add("slide-visible");
 			controlSecond.classList.add("current");
-			if (firstSlide.classList.contains("slider-visible")&&controlFirst.classList.contains("current")) {
-				firstSlide.classList.remove("slider-visible");
+			if (firstSlide.classList.contains("slide-visible")&&controlFirst.classList.contains("current")) {
+				firstSlide.classList.remove("slide-visible");
 				controlFirst.classList.remove("current");
 				console.log("second control pressed");
 			}
-			if (thirdSlide.classList.contains("slider-visible")&&controlThird.classList.contains("current")) {
-				thirdSlide.classList.remove("slider-visible");
+			if (thirdSlide.classList.contains("slide-visible")&&controlThird.classList.contains("current")) {
+				thirdSlide.classList.remove("slide-visible");
 				controlThird.classList.remove("current");
 				console.log("second control pressed");
 			}
@@ -49,15 +49,15 @@
 			
 		controlThird.addEventListener("click", function(event){
 			event.preventDefault();
-			thirdSlide.classList.add("slider-visible");
+			thirdSlide.classList.add("slide-visible");
 			controlThird.classList.add("current");
-			if (firstSlide.classList.contains("slider-visible")&&controlFirst.classList.contains("current")) {
-				firstSlide.classList.remove("slider-visible");
+			if (firstSlide.classList.contains("slide-visible")&&controlFirst.classList.contains("current")) {
+				firstSlide.classList.remove("slide-visible");
 				controlFirst.classList.remove("current");
 				console.log("third control pressed");
 			}
-			if (secondSlide.classList.contains("slider-visible")&&controlSecond.classList.contains("current")) {
-				secondSlide.classList.remove("slider-visible");
+			if (secondSlide.classList.contains("slide-visible")&&controlSecond.classList.contains("current")) {
+				secondSlide.classList.remove("slide-visible");
 				controlSecond.classList.remove("current");
 				console.log("third control pressed");
 			}

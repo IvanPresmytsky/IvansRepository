@@ -2,19 +2,22 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 	<title>Magazine</title>
 </head>
 <body>
 
-	<header class="main-header header">
-		<div class="conteiner clearfix">
-			<div class="logo-and-nav">
+	<header class="main-header  clearfix">
+			<div class="logo-and-nav header">
+				<div class="container">
 				<div class="logo">
-					
+					<i></i>
+					<h1>Magazine</h1>
 				</div>
 				<nav class="main-navigation">
 					<ul>
-						<li>
+						<li class="active">
 							<a href="#">Home</a>
 						</li>
 						<li>
@@ -38,142 +41,564 @@
 					</ul>
 				</nav>
 			</div>
-
+			</div>
 			<div class="random-news">
+				<div class="container">
 				<article>
 					<a href="#">
-						<img src="" alt="">
-						<h2></h2>
-						<p></p>
+						<img src="№" alt="">
+						<h3>news №1</h3>
+						<p class="news-date">5 months ago</p>
 					</a>
 				</article>
 				<article>
 					<a href="#">
-						<img src="" alt="">
-						<h2></h2>
-						<p></p>
+						<img src="№" alt="">
+						<h3>news №2</h3>
+						<p class="news-date">5 months ago</p>
 					</a>
 				</article>
 				<article>
 					<a href="#">
-						<img src="" alt="">
-						<h2></h2>
-						<p></p>
+						<img src="№" alt="">
+						<h3>news №3</h3>
+						<p class="news-date">6 months ago</p>
 					</a>
 				</article>
 				<article>
 					<a href="#">
-						<img src="" alt="">
-						<h2></h2>
-						<p></p>
+						<img src="№" alt="">
+						<h3>news №4</h3>
+						<p class="news-date">6 months ago</p>
 					</a>
 				</article>
+				</div>
 			</div>
 			<div class="breaking-news">
-				<h2>Breaking news</h2>
-				<span></span>
-				<span></span>
-				<span></span>
-				<input type="search">
-				<input type="submit">
+				<div class="container">
+					<h2>Breaking news</h2>
+					<h3>hz che za hren</h3>
+					<a>i nahui eto nuzno</a>
+						<div class="search">
+							<span>lectrus non rutrum</span>
+							<input type="search" placeholder="Search here">
+							<input type="submit">
+						</div>
+				</div>
 			</div>
-		</div>
 	</header>
 
 	<div class="main-content">
-		<div class="conteiner clearfix">
-			<div class="popular-news">
+		<div class="container">
+			<div class="content-row clearfix">
 				<div class="popular-news-gallery">
 					<div class="gallery-main-img">
-						<img src="" alt="">	
+						<img src="#" alt="">
+						<div class="popular-news-gallery-text">
+								<p>some fucking text</p>
+								<p>more fucking text</p>
+						</div>	
 					</div>
-					<div>
-						<img src="" alt="">
-						<img src="" alt="">
-						<img src="" alt="">
-						<img src="" alt="">
+					<div class="popular-news-gallery-slides">
+						<img class="slide-active" src="#" alt="">
+						<img src="#" alt="">
+						<img src="#" alt="">
+						<img src="#" alt="">
 					</div>
 				</div>
 				<div class="popular-news-container">
-					<h2 class="popular-news-title">Most popular news</h2>
+					<h2 class="popular-news-title header">Most popular news</h2>
 					<div>
 						<a href="#">
-							<p>the first news</p>
+							<h3>the first news</h3>
 						</a>
 						<a href="#">
-							<p>the second news</p>
+							<h3>the second news</h3>
 						</a>
 						<a href="#">
-							<p>the third news</p>
+							<h3>the third news</h3>
 						</a>
 						<a href="#">
-							<p>the fourth news</p>
+							<h3>the fourth news</h3>
 						</a>
 					</div>
 				</div>
+
+				<div class="news-filter">
+					<div class="news-filter-header header">
+						<ul>
+							<li>
+								<a href="#">Popular</a>
+							</li>
+							<li>
+								<a href="#">Recent</a>
+							</li>
+							<li>
+								<a href="#">Comments</a>
+							</li>
+						</ul>
+					</div>
+					<div class="news-filter-container">
+						<article>
+							<a href="#">
+								<img src="#" alt="">
+								<h3>News №1</h3>
+								<p>some fucking text</p>
+							</a>
+						</article>
+						<article>
+							<a href="#">
+								<img src="#" alt="">
+								<h3>News №2</h3>
+								<p>some fucking text</p>
+							</a>
+						</article>
+						<article>
+							<a href="#">
+								<img src="#" alt="">
+								<h3>News №3#</h3>
+								<p>some fucking text</p>
+							</a>
+						</article>
+					</div>
+					<div class="news-filter-pagination">
+						<button>left</button>
+						<button>right</button>
+					</div>
+				</div>
 			</div>
-			<div class="news-filter">
-				<div class="news-filter-header header">
-					<ul>
-						<li>
-							<a href="#">Popular</a>
-						</li>
-						<li>
-							<a href="#">Recent</a>
-						</li>
-						<li>
-							<a href="#">Comments</a>
-						</li>
-					</ul>
+			<div class="content-row clearfix">
+				<div class="hot-stuff">
+					<div class="content-header">
+						<h2>Hot Stuff</h2>
+						<button>left</button>
+						<button>right</button>
+					</div>
+					<article>
+						<div>
+							<img src="#" alt="">
+						</div>
+						<div>
+							<img src="#" alt="">
+							<h3>news №1</h3>
+						</div>
+						<div>
+							<span class="news-date">July 11, 2015</span>
+							<span><i class="star"></i></span>
+							<span><i class="star"></i></span>
+							<span><i class="star"></i></span>
+							<span><i class="star"></i></span>
+							<span><i class="star"></i></span>
+						</div>
+					</article>
+					<article>
+						<div>
+							<img src="#" alt="">
+						</div>
+						<div>
+							<img src="#" alt="">
+							<h3>news №1</h3>
+						</div>
+						<div>
+							<span class="news-date">July 11, 2015</span>
+							<span><i class="star"></i></span>
+							<span><i class="star"></i></span>
+							<span><i class="star"></i></span>
+							<span><i class="star"></i></span>
+							<span><i class="star"></i></span>
+						</div>
+					</article>
+					<article>
+						<div>
+							<img src="#" alt="">
+						</div>
+						<div>
+							<img src="#" alt="">
+							<h3>news №2</h3>
+						</div>
+						<div>
+							<span class="news-date">July 17, 2015</span>
+							<span><i class="star"></i></span>
+							<span><i class="star"></i></span>
+							<span><i class="star"></i></span>
+							<span><i class="star"></i></span>
+							<span><i class="star"></i></span>
+						</div>
+					</article>
+					<article>
+						<div>
+							<img src="#" alt="">
+						</div>
+						<div>
+							<img src="#" alt="">
+							<h3>news №3</h3>
+						</div>
+						<div>
+							<span class="news-date">July 15, 2015</span>
+							<span><i class="star"></i></span>
+							<span><i class="star"></i></span>
+							<span><i class="star"></i></span>
+							<span><i class="star"></i></span>
+							<span><i class="star"></i></span>
+						</div>
+					</article>
 				</div>
-				<div class="news-filter-container">
+				<div class="recent-posts">
+					<div class="content-header">
+						<h2>Recent Posts</h2>
+					</div>
 					<article>
-					<a href="#">
-						<img src="" alt="">
-						<h2></h2>
-						<p></p>
-					</a>
+						<img src="#" alt="">
+						<h3>News №1</h3>
+						<p class="news-date">August 12, 2015</p>
+						<span><i class="star"></i></span>
+						<span><i class="star"></i></span>
+						<span><i class="star"></i></span>
+						<span><i class="star"></i></span>
+						<span><i class="star"></i></span>
 					</article>
 					<article>
-						<a href="#">
-							<img src="" alt="">
-							<h2></h2>
-							<p></p>
-						</a>
+						<img src="#" alt="">
+						<h3>News №2</h3>
+						<p class="news-date">August 10, 2015</p>
+						<span><i class="star"></i></span>
+						<span><i class="star"></i></span>
+						<span><i class="star"></i></span>
+						<span><i class="star"></i></span>
+						<span><i class="star"></i></span>
 					</article>
 					<article>
-						<a href="#">
-							<img src="" alt="">
-							<h2></h2>
-							<p></p>
-						</a>
+						<img src="#" alt="">
+						<h3>News №3</h3>
+						<p class="news-date">August 2, 2015</p>
+						<span><i class="star"></i></span>
+						<span><i class="star"></i></span>
+						<span><i class="star"></i></span>
+						<span><i class="star"></i></span>
+						<span><i class="star"></i></span>
 					</article>
 				</div>
-				<div class="news-filter-pagination">
+			</div>
+			<div class="content-row clearfix">
+				<div class="game-news">
+					<div class="content-header">
+						<h2>Game News</h2>
+					</div>
+					<article class="">
+						<div class="main-news">
+							<img src="#" alt="">
+							<h3>News №1</h3>
+							<span class="news-date">August 10, 2015</span>
+							<p>very match fucking text very match fucking text very match fucking text very match fucking text very match fucking text</p>
+						</div>
+						<article>
+							<img src="#" alt="">
+							<h3>News №2</h3>
+							<p>some fucking text</p>
+							<p class="news-date">August 2, 2015</p>
+						</article>
+						<article>
+							<img src="#" alt="">
+							<h3>News №3</h3>
+							<p>some fucking text</p>
+							<p class="news-date">August 3, 2015</p>
+						</article>
+					</article>
+				</div>
+				<div class="sport-news">
+					<div class="content-header">
+						<h2>Sport News</h2>
+					</div>
+					<article class="">
+						<div class="main-news">
+							<img src="#" alt="">
+							<h3>News №1</h3>
+							<span class="news-date">August 10, 2015</span>
+							<p>very match fucking text very match fucking text very match fucking text very match fucking text very match fucking text</p>
+						</div>
+						<article>
+							<img src="#" alt="">
+							<h3>News №2</h3>
+							<p>some fucking text</p>
+							<p class="news-date">August 2, 2015</p>
+						</article>
+						<article>
+							<img src="#" alt="">
+							<h3>News №3</h3>
+							<p>some fucking text</p>
+							<p class="news-date">August 3, 2015</p>
+						</article>
+					</article>
+				</div>
+				<div class="technology-news">
+					<div class="content-header">
+						<h2>Technology News</h2>
+					</div>
+					<article class="">
+						<div class="main-news">
+							<img src="#" alt="">
+							<h3>News №1</h3>
+							<span class="news-date">August 10, 2015</span>
+							<p>very match fucking text very match fucking text very match fucking text very match fucking text very match fucking text</p>
+						</div>
+						<article>
+							<img src="#" alt="">
+							<h3>News №2</h3>
+							<p>some fucking text</p>
+							<p class="news-date">August 2, 2015</p>
+						</article>
+						<article>
+							<img src="#" alt="">
+							<h3>News №3</h3>
+							<p>some fucking text</p>
+							<p class="news-date">August 3, 2015</p>
+						</article>
+					</article>
+				</div>
+			</div>
+			<div class="content-row clearfix">
+				<div class="fashion-news">
+					<div class="content-header">
+						<h2>Fashion News</h2>
+					</div>
+						<article class="">
+						<div class="main-news">
+							<img src="#" alt="">
+							<h3>News №1</h3>
+							<span class="news-date">August 10, 2015</span>
+							<p>very match fucking text very match fucking text very match fucking text very match fucking text very match fucking text</p>
+						</div>
+						<article>
+							<img src="#" alt="">
+							<h3>News №2</h3>
+							<p>some fucking text</p>
+							<p class="news-date">August 2, 2015</p>
+						</article>
+						<article>
+							<img src="#" alt="">
+							<h3>News №3</h3>
+							<p>some fucking text</p>
+							<p class="news-date">August 3, 2015</p>
+						</article>
+						<article>
+							<img src="#" alt="">
+							<h3>News №4</h3>
+							<p>some fucking text</p>
+							<p class="news-date">August 3, 2015</p>
+						</article>
+					</article>
+					
+				</div>
+				<div class="video-gallery">
+					<div class="content-header">
+						<h2>Video Gallery</h2>
+					</div>
+					<video src="#" class="main-video"></video>
+					<video src="#"></video>
+					<video src="#"></video>
+					<video src="#"></video>
+					<video src="#"></video>
+				</div>
+			</div>
+			<div class="all-news-gallery">
+				<div class="content-header">
+					<h2>All News Gallery</h2>
 					<button>left</button>
 					<button>right</button>
 				</div>
+				<article>
+					<div>
+						<img src="#" alt="">
+					</div>
+					<div>
+						<img src="#" alt="">
+						<h3>news №1</h3>
+					</div>
+					<p>
+						<span class="news-date">July 11, 2015</span>
+					</p>
+				</article>
+				<article>
+					<div>
+						<img src="#" alt="">
+					</div>
+					<div>
+						<img src="#" alt="">
+						<h3>news №1</h3>
+					</div>
+					<p>
+						<span class="news-date">July 11, 2015</span>
+					</p>
+				</article>
+				<article>
+					<div>
+						<img src="#" alt="">
+					</div>
+					<div>
+						<img src="#" alt="">
+						<h3>news №1</h3>
+					</div>
+					<p>
+						<span class="news-date">July 11, 2015</span>
+					</p>
+				</article>
+				<article>
+					<div>
+						<img src="#" alt="">
+					</div>
+					<div>
+						<img src="#" alt="">
+						<h3>news №1</h3>
+					</div>
+					<p>
+						<span class="news-date">July 11, 2015</span>
+					</p>
+				</article>
+				<article>
+					<div>
+						<img src="#" alt="">
+					</div>
+					<div>
+						<img src="#" alt="">
+						<h3>news №1</h3>
+					</div>
+					<p>
+						<span class="news-date">July 11, 2015</span>
+					</p>
+				</article>
+				<article>
+					<div>
+						<img src="#" alt="">
+					</div>
+					<div>
+						<img src="#" alt="">
+						<h3>news №1</h3>
+					</div>
+					<p>
+						<span class="news-date">July 11, 2015</span>
+					</p>
+				</article>
 			</div>
-			<div class="hot-stuff"></div>
-			<div class="recent-posts"></div>
-			<div class="game-news"></div>
-			<div class="sport-news"></div>
-			<div class="technology-news"></div>
-			<div class="fashion-news"></div>
-			<div class="video-gallery"></div>
-			<div class="all-news-gallery"></div>
 		</div>
 	</div>
 
 	<footer class="main-footer">
-		<div class="conteiner clearfix">
-			<div class="latest-news"></div>
-			<div class="latest-tweets"></div>
-			<div class="tag-cloud"></div>
-			<div class="social"></div>
-			<div class="logo-and-info"></div>
-			<div class="copyright"></div>
-		</div>
+		<div class="container clearfix">
+			<div class="latest-news">
+				<div class="content-header">
+					<h2>Latest News</h2>
+				</div>
+				<article>
+					<div>
+					<img src="#" alt="">
+						<span><i class="star"></i></span>
+						<span><i class="star"></i></span>
+						<span><i class="star"></i></span>
+						<span><i class="star"></i></span>
+						<span><i class="star"></i></span>
+					</div>
+					<h3>News №1</h3>
+					<p class="news-date">August 12, 2015</p>
+				</article>
+				<article>
+					<div>
+					<img src="#" alt="">
+						<span><i class="star"></i></span>
+						<span><i class="star"></i></span>
+						<span><i class="star"></i></span>
+						<span><i class="star"></i></span>
+						<span><i class="star"></i></span>
+					</div>
+					<h3>News №1</h3>
+					<p class="news-date">August 12, 2015</p>
+				</article>
+				<article>
+					<div>
+					<img src="#" alt="">
+						<span><i class="star"></i></span>
+						<span><i class="star"></i></span>
+						<span><i class="star"></i></span>
+						<span><i class="star"></i></span>
+						<span><i class="star"></i></span>
+					</div>
+					<h3>News №1</h3>
+					<p class="news-date">August 12, 2015</p>
+				</article>
+			</div>
+			<div class="latest-tweets">
+				<div class="content-header">
+					<h2>Latest Tweets</h2>
+				</div>
+				<a href="#">
+					<img src="#" alt="">
+					<p>some fucking text</p>
+					<p>4 hours ago</p>
+				</a>
+				<a href="#">
+					<img src="#" alt="">
+					<p>some fucking text</p>
+					<p>4 hours ago</p>
+				</a>
+				<a href="#">Follow twitter</a>
+			</div>
+			<div class="footer-content clearfix">
+				<div class="tag-cloud">
+					<div class="content-header">
+						<h2>Tag Cloud</h2>
+					</div>
+					<div class="tag-cloud-content">
+						<a href="#">some tags</a>
+						<a href="#">some tags</a>
+						<a href="#">some tags</a>
+						<a href="#">some tags</a>
+						<a href="#">some tags</a>
+						<a href="#">some tags</a>
+						<a href="#">some tags</a>
+						<a href="#">some tags</a>
+						<a href="#">some tags</a>
+					</div>
+				</div>
+				<div class="social">
+					<div class="content-header">
+						<h2>Social Media</h2>
+					</div>
+					<div class="social-content">
+						<a href="#">
+							<img src="#" alt="">
+							<span>RSS</span>
+							<span>Subscribe</span>
+						</a>
+						<a href="#">
+							<img src="#" alt="">
+							<span>37005</span>
+							<span>Followers</span>
+						</a>
+						<a href="#">
+							<img src="#" alt="">
+							<span>109</span>
+							<span>Fans</span>
+						</a>
+					</div>
+				</div>
+				<div class="logo-and-info">
+					<img src="#" alt="">
+					<div>
+						<h3>About Magazine</h3>
+						<p>some fucking text</p>
+					</div>
+				</div>
+			</div>
+		</div>	
+			<div class="copyright">
+				<p>All Right Reserved by minimalthemes</p>
+				<div class="footer-nav">
+					<a href="#">Home</a>
+					<a href="#">About</a>
+					<a href="#">Blog</a>
+					<a href="#">Contact</a>
+				</div>
+			</div>
+		
 	</footer>
 
 </body>

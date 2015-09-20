@@ -3,11 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/styleMin.css">
-	<!-- для обозначения знака & в адресах юзат &amp. Читай в инетах про спец символы -->
-	<link href="http://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
-	<!-- title точно не index, сайт на русском, дай ему человеческое название -->
-	<title>index</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="http://fonts.googleapis.com/css?family=Roboto:400,700,500&amp.subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<title>Веб-студия "Нердс"</title>
 </head>
 <body>
 	<header class="main-header">
@@ -36,40 +34,39 @@
 					</li>
 				</ul>
 			</nav>
-			<!-- Лучше обернуть в все слайды в один контенер, типа slider. А каждый слайд назвать slide. Хотя так, тоже неплохо -->
-			<div class="features-gallery first slider-visible clearfix">
-				<div class="features-gallery-text">
-					<h2 class="slogan">Долго, дорого, скрупулезно.</h2>
-					<p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-					<a href="#" class="btn">узнать больше</a>
-					
+			<div class="slider">		
+				<div class="slide-first slide-visible clearfix">
+					<div class="slide-text">
+						<h2 class="slogan">Долго, дорого, скрупулезно.</h2>
+						<p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+						<a href="#" class="btn">узнать больше</a>	
+					</div>
+					<div class="slide-img">
+						<img class="slide-first-img" src="images/gajets-picture.png" width="338" height="231" alt="gajets">
+					</div>
 				</div>
-				
-				<div class="features-gallery-img">
-					<img class="first-slide" src="images/gajets-picture.png" width="338" height="231" alt="gajets">
+				<div class="slide-second clearfix">
+					<div class="slide-text">
+						<h2 class="slogan">Любите ли вы математику, как любим ее мы?</h2>
+						<p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им  возможность все посчитать</p>
+						<a href="#" class="btn">узнать больше</a>
+					</div>
+					<div class="slide-img">
+						<img class="slide-second-img" src="images/calculator-picture.png" width="230" height="249" alt="calculator">
+					</div>
+				</div>
+				<div class="slide-third clearfix">
+					<div class="slide-text">
+						<h2 class="slogan">Только наркотики, только хардкор!</h2>
+						<p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+						<a href="#" class="btn">узнать больше</a>
+					</div>
+					<div class="slide-img">
+						<img class="slide-third-img" src="images/robot-picture.png" width="333" height="319" alt="robot">
+					</div>
 				</div>
 			</div>
-			<div class="features-gallery second clearfix">
-				<div class="features-gallery-text">
-					<h2 class="slogan">Любите ли вы математику, как любим ее мы?</h2>
-					<p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им  возможность все посчитать</p>
-					<a href="#" class="btn">узнать больше</a>
-				</div>
-				<div class="features-gallery-img">
-					<img class="second-slide" src="images/calculator-picture.png" width="230" height="249" alt="calculator">
-				</div>
-			</div>
-			<div class="features-gallery third clearfix">
-				<div class="features-gallery-text">
-					<h2 class="slogan">Только наркотики, только хардкор!</h2>
-					<p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
-					<a href="#" class="btn">узнать больше</a>
-				</div>
-				<div class="features-gallery-img">
-					<img class="third-slide" src="images/robot-picture.png" width="333" height="319" alt="robot">
-				</div>
-			</div>
-			<div class="features-gallery-controls">
+			<div class="slider-controls">
 				<a class="first-control current" href="#"></a>
 				<a class="second-control" href="#"></a>
 				<a  class="third-control" href="#"></a>
@@ -83,7 +80,7 @@
 						В данном месте при переполнении контентов ломается вёрстка -->
 			<div class="features-row clearfix">
 				<!-- Всем колонкам дай общий класс, они же все одинаковые. и через nth-child мути -->
-				<div class="features-left-column">
+				<div class="features-column">
 					<img src="images/website-picture.jpg" width="240" height="124" alt="Веб-сайты">
 					<h2 class="features-title">Веб-сайты</h2>
 					<p>
@@ -93,7 +90,7 @@
 					<!-- это не инлайн блок. Попробуй переполнить контентом. Все кнопки инлайн блоки -->
 					<a href="#" class="btn">Заказать</a>
 				</div>
-				<div class="features-central-column">
+				<div class="features-column">
 					<img src="images/apps-picture.jpg" width="240" height="124" alt="Приложения">
 					<h2 class="features-title">Приложения</h2>
 					<p>
@@ -101,7 +98,7 @@
 					</p>
 					<a href="#" class="btn">Заказать</a>
 				</div>
-				<div class="features-right-column">
+				<div class="features-column">
 					<img src="images/presentation-picture.jpg" width="240" height="124" alt="Презентации">
 					<h2 class="features-title">Презентации</h2>
 					<p>
@@ -158,7 +155,6 @@
 			</div>
 		</div>
 			<div class="map-and-contacts">
-				<!-- выруби js в браузере и под картинкой зафигачь фон в цвет картинки, на всякий случай, если не подтянется картинка -->
 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d999.2933083792902!2d30.319607617182683!3d59.93900137999871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1438334542232">
 				</iframe>
 				<!-- contacts не вылазит из общей ширины, делай как в макете-->
@@ -173,10 +169,8 @@
 		
 	<footer class="main-footer">
 		<div class="container clearfix">
-			<!-- footer-social у тебя в css не используется, нафига он вообще тут нужен? Проверь все классы, на использование в css -->
-			<div class="footer-social">
+			<div>
 				<div class="social-buttons">
-					<!-- Зачем давать чему-то класс, если ты его нигде не юзаешь?  -->
 					<a href="#" class="social-btn-vk">
 						<i class="icon-vk"></i>
 					</a>
