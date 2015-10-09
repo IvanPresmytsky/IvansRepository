@@ -10,30 +10,32 @@
 <body>
 	<header class="main-header">
 		<div class="container clearfix">
-			<div class="logo">
-				<a href="index.html">
-					<img src="images/logo3.png" width="139" height="56" alt="logo">
-				</a>
+			<div class="logo-and-nav clearfix">
+				<div class="logo">
+					<a href="index.html">
+						<img src="images/logo3.png" width="139" height="56" alt="logo">
+					</a>
+				</div>
+				<nav class="main-navigation">
+					<ul>
+						<li>
+							<a href="index.html">Студия</a>
+						</li>
+						<li>
+							<a href="#">Клиенты</a>
+						</li>
+						<li>
+							<a href="nerds-catalog.html" class="active">Магазин</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+						<li>
+							<a class="basket" href="#"><i class="icon-basket"></i>Корзина</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
-			<nav class="main-navigation">
-				<ul>
-					<li>
-						<a href="index.html">Студия</a>
-					</li>
-					<li>
-						<a href="#">Клиенты</a>
-					</li>
-					<li>
-						<a href="nerds-catalog.html" class="active">Магазин</a>
-					</li>
-					<li>
-						<a href="#">Контакты</a>
-					</li>
-					<li>
-						<a class="basket" href="#"><i class="icon-basket"></i>Корзина</a>
-					</li>
-				</ul>
-			</nav>
 			<h1 class="catalog-main-title">добро пожаловать в магазин готовых макетов</h1>
 		</div>
 	</header>
@@ -43,12 +45,10 @@
 			<div class="product-filter">
 				<form action="#" method="post">
 					<div class="price-filter">
-						<!-- Есть ещё один способо как сделать эти разделы, через fieldset и legend -->
 						<h2 class="filter-title">Стоимость:</h2>
 						<div class="price-filter-scroll">
-							<!-- Это точно не ссылки, в курсе было как их делать -->
-							<a class="scroll-left-circle" href="#"></a>
-							<a class="scroll-right-circle" href="#"></a>
+							<span class="scroll-left-circle" href="#"></span>
+							<span class="scroll-right-circle" href="#"></span>
 						</div>
 						<div class="price-filter-text">
 							<label for="lower-bound-price">от</label>
@@ -79,8 +79,7 @@
 						<input type="checkbox" id="shopping-cart" name="shopping cart">
 						<label for="shopping-cart">Корзина</label>	
 					</div>
-					<!-- где у кнопки type и name? -->
-					<button class="show-btn">показать</button>
+					<button class="show-btn btn" type="submit" name="show" >показать</button>
 				</form>
 			</div>
 			<div class="product-gallery">
@@ -98,8 +97,7 @@
 							<img src="images/aviator-picture.jpg" width="240" height="240" alt="aviator">
 						</div>
 						<div class="buy-window">
-							<!-- h1 может быть только один на странице -->
-							<h2 class="buy-window-title">Sunset</h1>
+							<h2 class="buy-window-title">Sunset</h2>
 							<p>Интернет-магазин с личным кабинетом</p>
 							<a href="#" class="btn">10 000P</a>
 						</div>
@@ -109,7 +107,7 @@
 							<img src="images/kakietonegry-picture.jpg" width="240" height="240" alt="kakietonegry">
 						</div>
 						<div class="buy-window">
-							<h2 class="buy-window-title">Sunset</h1>
+							<h2 class="buy-window-title">Sunset</h2>
 							<p>Интернет-магазин с личным кабинетом</p>
 							<a href="#" class="btn">10 000P</a>
 						</div>
@@ -119,7 +117,7 @@
 							<img src="images/forte-picture.jpg" width="240" height="240" alt="forte">
 						</div>
 						<div class="buy-window">
-							<h2 class="buy-window-title">Sunset</h1>
+							<h2 class="buy-window-title">Sunset</h2>
 							<p>Интернет-магазин с личным кабинетом</p>
 							<a href="#" class="btn">10 000P</a>
 						</div>
@@ -129,7 +127,7 @@
 							<img src="images/mot-picture.jpg" width="240" height="240" alt="modern organic thai">
 						</div>
 						<div class="buy-window">
-							<h2 class="buy-window-title">Sunset</h1>
+							<h2 class="buy-window-title">Sunset</h2>
 							<p>Интернет-магазин с личным кабинетом</p>
 							<a href="#" class="btn">10 000P</a>
 						</div>
@@ -139,7 +137,7 @@
 							<img src="images/avenue-picture.jpg" width="240" height="240" alt="avenue">
 						</div>
 						<div class="buy-window">
-							<h2 class="buy-window-title">Sunset</h1>
+							<h2 class="buy-window-title">Sunset</h2>
 							<p>Интернет-магазин с личным кабинетом</p>
 							<a href="#" class="btn">10 000P</a>
 						</div>
@@ -149,18 +147,17 @@
 							<img src="images/dovetail-picture.jpg" width="240" height="240" alt="dovetail">
 						</div>
 						<div class="buy-window">
-							<h2 class="buy-window-title">Sunset</h1>
+							<h2 class="buy-window-title">Sunset</h2>
 							<p>Интернет-магазин с личным кабинетом</p>
 							<a href="#" class="btn">10 000P</a>
 						</div>
 					</div>
 				</div>
 				<div class="pagination">
-					<!-- в css кнопкам ширина не задаётся. не проходит пункт переполнения -->
-					<a href="#" class="btn-pagination btn-active">1</a>
-					<a href="#" class="btn-pagination">2</a>
-					<a href="#" class="btn-pagination">3</a>
-					<a href="#" class="btn-pagination btn-pagination-next">Следующая</a>
+					<a href="#" class="btn btn-pagination btn-active">1</a>
+					<a href="#" class="btn btn-pagination">2</a>
+					<a href="#" class="btn btn-pagination">3</a>
+					<a href="#" class="btn btn-pagination btn-pagination-next">Следующая</a>
 				</div>
 			</div>
 		</div>
@@ -201,7 +198,6 @@
 		</div>
 	</footer>
 	
-	<!-- Форма должна прокручиваться вместе со страницей.  -->
 	<div class="write-us">
 		<form action="/echo" method="post">
 			<div class="form-login-container">
@@ -214,7 +210,6 @@
 			</div>
 			<div class="form-mailbody-container">
 				<p><b>Текст письма:</b></p>
-				<!-- textarea не должна изменять свои размеры -->
 				<textarea class="mail-text" placeholder="В СВОБОДНОЙ ФОРМЕ" name="mail-text"></textarea> 
 				<input class="btn" type="submit" value="Отправить">
 				<input class="btn" type="reset" value="Отмена">

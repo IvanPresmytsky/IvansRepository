@@ -10,30 +10,32 @@
 <body>
 	<header class="main-header">
 		<div class="container clearfix">
-			<div class="logo">
-				<a href="index.html">
-					<img src="images/logo3.png" width="139" height="56" alt="logo">
-				</a>
+			<div class="logo-and-nav clearfix">
+				<div class="logo">
+					<a href="index.html">
+						<img src="images/logo3.png" width="139" height="56" alt="logo">
+					</a>
+				</div>
+				<nav class="main-navigation">
+					<ul>
+						<li>
+							<a href="#" class="active">Студия</a>
+						</li>
+						<li>
+							<a href="#">Клиенты</a>
+						</li>
+						<li>
+							<a href="nerds-catalog.html">Магазин</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+						<li>
+							<a class="basket" href="#"><i class="icon-basket"></i>Корзина</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
-			<nav class="main-navigation">
-				<ul>
-					<li>
-						<a href="#" class="active">Студия</a>
-					</li>
-					<li>
-						<a href="#">Клиенты</a>
-					</li>
-					<li>
-						<a href="nerds-catalog.html">Магазин</a>
-					</li>
-					<li>
-						<a href="#">Контакты</a>
-					</li>
-					<li>
-						<a class="basket" href="#"><i class="icon-basket"></i>Корзина</a>
-					</li>
-				</ul>
-			</nav>
 			<div class="slider">		
 				<div class="slide-first slide-visible clearfix">
 					<div class="slide-text">
@@ -62,7 +64,7 @@
 						<a href="#" class="btn">узнать больше</a>
 					</div>
 					<div class="slide-img">
-						<img class="slide-third-img" src="images/robot-picture.png" width="333" height="319" alt="robot">
+						<img class="slide-third-img" src="images/robot-picture.png" width="333" height="310" alt="robot">
 					</div>
 				</div>
 			</div>
@@ -76,18 +78,13 @@
 
 	<div class="main-content">
 		<div class="container clearfix">
-			<!-- features-row паддинг снизу добавляй. И не надо в таких блоках высоту ставить вообще, они сами растянуться на нужную высоут с помощью паддинга.
-						В данном месте при переполнении контентов ломается вёрстка -->
 			<div class="features-row clearfix">
-				<!-- Всем колонкам дай общий класс, они же все одинаковые. и через nth-child мути -->
 				<div class="features-column">
 					<img src="images/website-picture.jpg" width="240" height="124" alt="Веб-сайты">
 					<h2 class="features-title">Веб-сайты</h2>
 					<p>
 						Мир никогда не будет прежним после того как увидит наш сайт!
 					</p>
-					<!-- Все кнопки не макетного размера -->
-					<!-- это не инлайн блок. Попробуй переполнить контентом. Все кнопки инлайн блоки -->
 					<a href="#" class="btn">Заказать</a>
 				</div>
 				<div class="features-column">
@@ -104,13 +101,13 @@
 					<p>
 						Вы даже не подозреваете, насколько вы изумительны!
 					</p>
-					<a href="" class="btn">Заказать</a>
+					<a href="#" class="btn">Заказать</a>
 				</div>
 			</div>
 			<div class="description-content clearfix">
 				<div class="description-left-column">
 					<h2 class="description-title">
-						Мы - маленькая, но гордая дизайн студия из Краснодара.
+						Мы - маленькая, но гордая дизайн-студия из Краснодара.
 					</h2>
 					<p>
 						Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.
@@ -157,7 +154,6 @@
 			<div class="map-and-contacts">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d999.2933083792902!2d30.319607617182683!3d59.93900137999871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1438334542232">
 				</iframe>
-				<!-- contacts не вылазит из общей ширины, делай как в макете-->
 				<div class="contacts">
 					<h2 class="contacts-title">NERDS DESIGN STUDIO</h2>
 					<p>191186. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>

@@ -138,7 +138,6 @@ video {
 .container {
 	width: 1756px;
 	margin: 0 auto;
-	ackground: yellow;
 }
 
 .main-header {
@@ -251,6 +250,7 @@ video {
 	padding: 22px 0 19px 0;
 
 	font-size: 0;
+
 	background: #f7f7f7;
 	border-bottom: 2px solid #d5d5d5;
 }
@@ -318,10 +318,12 @@ video {
 .breaking-news a:last-of-type h3{
 	width: 230px;
 }
+
 .breaking-news a:last-of-type {
 	margin-right: 0;
 	
 }
+
 .breaking-news a:nth-of-type(2):before {
 	content: ">> "
 }
@@ -448,7 +450,7 @@ video {
 	border: 6px solid #53626b;
 }
 
-img.slide-active:after{
+.popular-news-gallery-slides img.slide-active::after {
 	content: "";
 
 	position: absolute;
